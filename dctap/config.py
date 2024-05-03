@@ -6,7 +6,9 @@ from dataclasses import asdict
 from pathlib import Path
 
 # pylint: disable=consider-using-from-import
-import ruamel.yaml as yaml
+# import ruamel.yaml as yaml # has no safeload??
+import yaml
+
 from .defaults import (
     DEFAULT_CONFIGFILE_NAME,
     DEFAULT_HIDDEN_CONFIGFILE_NAME,
